@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url('image/bgpic.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            background-color:rgb(161, 92, 26);
+            margin: 0;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            padding: 20px 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 60px; 
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: rgb(119, 93, 190);
+        }
+
+        h1 {
+            font-size: 50px; 
+            font-weight: bold; 
+        }
+
+        p {
+            text-align: justify;
+            font-size: 20px; 
+            line-height: 35px;
+        }
+
+        .content {
+            text-align: center;
+            margin-top: 100px; 
+        }
+
+        .image {
+            max-width: 300px;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out; 
+        }
+
+        .image:hover {
+            transform: scale(1.1); 
+            transition: transform 0.5s ease-in-out; 
+        }
+
+        .image2 {
+            max-width: 200px;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out; 
+        }
+
+        .image2:hover {
+            transform: scale(1.1); 
+            transition: transform 0.5s ease-in-out; 
+        }
+
+        #audio-control {
+            position: fixed;
+            top: 60px; 
+            right: 10px;
+            background-color: black; 
+            color: white;
+            border: none;
+            border-radius: 50%;
+            padding: 15px;
+            font-size: 24px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #audio-control:hover {
+            background-color: black; 
+        }
+
+        .home-button {
+            position: fixed;
+            bottom: 30px; 
+            right: 1%;
+            transform: translateX(-50%); 
+            padding: 10px 25px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            border: 2px solid #9cfa9c;
+            border-radius: 20px;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .home-button:hover {
+            background-color: #9cfa9c;
+            color: #333;
+        }
+
+        footer {
+            background-color: #3333339a;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            font-size: 0.9em;
+        }
+
+        footer a {
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="home.html">HOME</a>
+            <a href="about_me.html">ABOUT ME</a>
+            <a href="education.html">EDUCATION</a>
+            <a href="family.html">FAMILY</a>
+            <a href="hobby.html">HOBBY</a>
+            <a href="album.html">ALBUM</a>
+        </nav>
+    </header>
+
+    <audio id="bg-audio" loop preload="auto">
+        <source src="music/song5.mp3" type="audio/mp3">
+    </audio>
+
+    <button id="audio-control">
+        &#9658; 
+    </button>
+
+    <div class="content">
+        <h1 style="font-family:verdana;">My Education Journey 📚</h1><br>
+        <div style="padding: 70px;">
+            <table style="width: 100%; border-collapse: collapse; text-align: center; border-radius: 10px; border: 1px solid black;">
+                <thead>
+                    <tr style="background-color: rgb(128, 68, 0); color: white; font-size: 25px;">
+                        <th style="border: 1px solid black; padding: 8px;">No</th>
+                        <th style="border: 1px solid black; padding: 8px;">Place</th>
+                        <th style="border: 1px solid black; padding: 8px;">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="background-color: white; color: black; font-size: 20px;">
+                        <td style="border: 1px solid black; padding: 8px;">1</td>
+                        <td style="border: 1px solid black; padding: 8px;">
+                            <a href="https://johor.uitm.edu.my/" target="_blank">
+                                <img src="image/uitmlogo.png" alt="School" style="width: 100px; height: auto;">
+                            </a>
+                        </td>
+                        <td style="border: 1px solid black; padding: 8px; text-align: justify;">
+                            <div style="margin: 16px;">
+                                <ul style="list-style-type:square;"><br>
+                                    <div style="text-align: center; margin-bottom: 20px;">
+                                        <img src="image/uitm.jpg" border="2" width="500px" alt="UiTM Johor Kampus Segamat"><br>
+                                    </div><br>
+                                    <h2 style="text-align: center;">Universiti Teknologi MARA (UiTM) Johor, Kampus Segamat</h2><br><br>
+                                    <li>
+                                        My academic journey took an exciting turn when I enrolled at Universiti Teknologi MARA (UiTM) Johor, Kampus Segamat.
+                                    </li>
+                                    <li>
+                                        Located at Jalan Universiti Off, KM 12, Jalan Muar, Kemajuan Tanah Jementah Batu Sebelas, 85000 Segamat, Johor Darul Ta'zim.
+                                    </li>
+                                    <li>
+                                        Pursued a Diploma in Information Management, aligning perfectly with my interests and aspirations.
+                                    </li>
+                                    <li>
+                                        Enjoyed enriching studies, warm friendships, and a serene environment in Segamat.
+                                    </li>
+                                    <li>
+                                        Aimed to achieve excellent results, dreaming of the Vice-Chancellor's Award or consistently making the Dean's List.
+                                    </li>
+                                    <li>
+                                        Supported by friends and lecturers who keep me motivated and inspired every step of the way.
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr style="background-color: white; color: black; font-size: 20px;">
+                        <td style="border: 1px solid black; padding: 8px;">2</td>
+                        <td style="border: 1px solid black; padding: 8px;">
+                            <a href="https://www.facebook.com/groups/462050800608558/user/100091371428521/?locale=ms_MY" target="_blank">
+                                <img src="image/pg2logo.png" alt="School" style="width: 100px; height: auto;">
+                            </a>                        </td>
+                        <td style="border: 1px solid black; padding: 8px; text-align: justify;">
+                            <div style="margin: 16px;">
+                                <ul style="list-style-type:circle;">
+                                    <div style="text-align: center; margin-bottom: 20px;">
+                                        <img src="image/smkpg2.jpg" border="2" 
+                                        
+                                        
+                                        
+                                        width="500px" alt="UiTM Johor Kampus Segamat"><br>
+                                    </div><br>
+                                    <h2 style="text-align: center;">Sekolah Mengengah Kebangsaan Pasir Gudang 2</h2><br><br>
+                                    <li>
+                                        My journey began at Sekolah Menengah Kebangsaan Pasir Gudang 2, located at Jalan Mawar Putih, Taman Mawar, 81700 Pasir Gudang, Johor.
+                                    </li>
+                                    <li>
+                                        Spent my formative years here from 2017 to 2021, creating countless memories and achieving significant milestones.
+                                    </li>
+                                    <li>
+                                        Scored an impressive 5A’s in my Sijil Pelajaran Malaysia (SPM) examination.
+                                    </li>
+                                    <li>
+                                        Experienced vibrant laughter, dedicated teachers, and cherished moments that remain unforgettable.
+                                    </li>
+                                    <li>
+                                        SMK Pasir Gudang 2 wasn’t just a school; it was a family that nurtured my dreams and built the foundation for my future.
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+        
+        
+    </div>
+
+    <script>
+        var audio = document.getElementById('bg-audio');
+        var audioControl = document.getElementById('audio-control');
+
+        var isPlaying = false; 
+        audioControl.innerHTML = "&#9658;"; 
+
+        audioControl.addEventListener('click', function() {
+            if (!isPlaying) {
+                audio.play();
+                audioControl.innerHTML = "&#10074;&#10074;"; 
+                isPlaying = true;
+            } else {
+                audio.pause();
+                audioControl.innerHTML = "&#9658;"; 
+                isPlaying = false;
+            }
+        });
+    </script>
+
+    <a href="home.html" class="home-button">Home</a>
+
+    <footer>
+        © 2024 𝓕𝓪𝓽𝓲𝓷'𝓼 𝓼𝓲𝓽𝓮𝓼♥. All rights <sub>reserved.</sub> 
+        Designed with ❤️ by <sup>𝓕𝓪𝓽𝓲𝓷.</sup>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url('image/bgpic.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            background-color: rgb(161, 92, 26);
+            margin: 0;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            padding: 20px 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 60px; 
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: rgb(247, 185, 193);
+        }
+
+        h1 {
+            font-size: 50px; 
+            font-weight: bold; 
+        }
+
+        p {
+            text-align: justify; 
+            font-size: 20px; 
+            line-height: 35px; 
+        }
+
+        .content {
+            text-align: center;
+            margin-top: 100px; 
+        }
+
+        .container1 {
+            padding: 25px;
+            margin: 25px; 
+            background-color: rgb(236, 212, 143);
+            border-radius: 15px;
+            align-items: center;
+            justify-items: center; 
+            place-items: center; 
+        }
+
+        .image {
+            width: 250px;
+            height: 250px;
+            object-fit: cover; 
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out; 
+        }
+        .image:hover {
+            transform: scale(1.1); 
+            transition: transform 0.5s ease-in-out; 
+        }
+
+        #audio-control {
+            position: fixed;
+            top: 60px; 
+            right: 10px;
+            background-color: black; 
+            color: white;
+            border: none;
+            border-radius: 50%;
+            padding: 15px;
+            font-size: 24px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #audio-control:hover {
+            background-color: black; 
+        }
+
+        .home-button {
+            position: fixed;
+            bottom: 30px; 
+            right: 1%; 
+            transform: translateX(-50%); 
+            padding: 10px 25px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            border: 2px solid #9cfa9c;
+            border-radius: 20px;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .home-button:hover {
+            background-color: #9cfa9c;
+            color: #333;
+        }
+
+        footer {
+            background-color: #3333339a;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            font-size: 0.9em;
+        }
+
+        footer a {
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="home.html">HOME</a>
+            <a href="about_me.html">ABOUT ME</a>
+            <a href="education.html">EDUCATION</a>
+            <a href="family.html">FAMILY</a>
+            <a href="hobby.html">HOBBY</a>
+            <a href="album.html">ALBUM</a>
+        </nav>
+    </header>
+
+    <audio id="bg-audio" loop preload="auto">
+        <source src="music/song3.mp3" type="audio/mp3">
+    </audio>
+
+    <button id="audio-control">
+        &#9658; 
+    </button>
+
+    <div class="content">
+        <h1 style="font-family:verdana;">Welcome to my Album 📸</h1><br>
+        <div class="container1"><br><br>
+                <img src="image/album1.jpg" alt="album" class="image">
+                <img src="image/album4.jpg" alt="album" class="image">
+                <img src="image/album7.jpg" alt="album" class="image">
+                <img src="image/album2.jpg" alt="album" class="image">
+                <img src="image/album5.jpg" alt="album" class="image">
+                <img src="image/album3.jpg" alt="album" class="image">
+                <img src="image/album6.jpg" alt="album" class="image">
+                <img src="image/album8.jpg" alt="album" class="image">
+                <img src="image/album9.jpg" alt="album" class="image">
+                <img src="image/album10.jpg" alt="album" class="image">
+                <img src="image/album11.jpg" alt="album" class="image">
+                <img src="image/album12.jpg" alt="album" class="image">
+                <img src="image/album13.jpg" alt="album" class="image">
+                <img src="image/album14.jpg" alt="album" class="image">
+                <img src="image/album15.jpg" alt="album" class="image">
+                <img src="image/album16.jpg" alt="album" class="image">
+                <img src="image/album17.jpg" alt="album" class="image">
+                <img src="image/album18.jpg" alt="album" class="image">
+                <img src="image/album19.jpg" alt="album" class="image">
+                <img src="image/album20.jpg" alt="album" class="image">
+                <img src="image/album21.jpg" alt="album" class="image">
+                <img src="image/album22.jpg" alt="album" class="image">
+                <img src="image/album23.jpg" alt="album" class="image">
+                <img src="image/album25.jpg" alt="album" class="image"><br>
+                <video width="250" height="400" autoplay muted>
+                    <source src="image/video1.mp4" type="video/mp4">
+                    <source src="image/video1.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video>
+                <video width="250" height="400" controls>
+                    <source src="image/video2.mp4" type="video/mp4">
+                    <source src="image/video2.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video>
+                <video width="250" height="400" autoplay muted>
+                    <source src="image/video6.mp4" type="video/mp4">
+                    <source src="image/video6.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video>
+                <video width="250" height="400" controls>
+                    <source src="image/video3.mp4" type="video/mp4">
+                    <source src="image/video3.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video>
+                <video width="250" height="400" autoplay muted>
+                    <source src="image/video5.mp4" type="video/mp4">
+                    <source src="image/video5.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video>
+                <video width="250" height="400" controls>
+                    <source src="image/video4.mp4" type="video/mp4">
+                    <source src="image/video4.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video>
+                <br><br>
+            </div><br>
+    </div>
+
+    <script>
+        var audio = document.getElementById('bg-audio');
+        var audioControl = document.getElementById('audio-control');
+
+        var isPlaying = false; 
+        audioControl.innerHTML = "&#9658;"; 
+
+        audioControl.addEventListener('click', function() {
+            if (!isPlaying) {
+                audio.play();
+                audioControl.innerHTML = "&#10074;&#10074;"; 
+                isPlaying = true;
+            } else {
+                audio.pause();
+                audioControl.innerHTML = "&#9658;"; 
+                isPlaying = false;
+            }
+        });
+    </script>
+
+    <a href="home.html" class="home-button">Home</a>
+
+    <footer>
+        © 2024 𝓕𝓪𝓽𝓲𝓷'𝓼 𝓼𝓲𝓽𝓮𝓼♥. All rights <sub>reserved.</sub> 
+        Designed with ❤️ by <sup>𝓕𝓪𝓽𝓲𝓷.</sup>
+    </footer>
+    
+</body>
+</html>
