@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url('image/bgpic.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            background-color: rgb(161, 92, 26);
+            margin: 0;
+        }
+
+        header {
+            display: flex;
+            align-items: center; 
+            justify-content: space-between;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            padding: 20px 50px;
+        }
+
+        .site-name-container {
+            display: flex;
+            align-items: center; 
+        }
+
+        .site-name {
+            font-family: 'sans-serif', cursive;
+            font-size: 22px;
+            color: #ffffff; 
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 40px; 
+            margin-left: auto; 
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: rgb(224, 107, 137);
+        }
+
+        h1 {
+            font-size: 40px; 
+            font-weight: bold; 
+        }
+
+        .content {
+            text-align: center;
+            margin-top: 30px; 
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 3fr 2fr;
+            gap: 5px;
+            padding: 40px 45PX;
+            margin: none; 
+            background-color: rgba(236, 213, 143, 0.432);
+            align-items: center;
+            justify-items: center; 
+            place-items: center; 
+        }
+
+        .container2 {
+            gap: 5px;
+            padding: 40px 45PX;
+            margin: 60px; 
+            background-color: rgba(236, 213, 143, 0.432);
+            border-radius: 15px;
+            align-items: center;
+            justify-items: center; 
+            place-items: center; 
+        }
+
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px; 
+            justify-content: center;
+        }
+
+        .button {
+            padding: 40px;
+            background-color: white;
+            color: black;
+            text-align: center;
+            border: 2px solid #b32a2a;
+            border-radius: 50px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: transform 0.3s, background-color 0.3s;
+            text-decoration: none;
+            width: 25%; 
+        }
+
+        .button:hover {
+            transform: scale(1.05);
+            background-color: rgb(236, 212, 143);
+            color: black;
+        }
+
+        .image {
+            max-width: 300px;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out; 
+        }
+
+        .image:hover {
+            transform: scale(1.1); 
+            transition: transform 0.5s ease-in-out; 
+        }
+
+        #audio-control {
+            position: fixed;
+            top: 60px; 
+            right: 10px;
+            background-color: black; 
+            color: white;
+            border: none;
+            border-radius: 50%;
+            padding: 15px;
+            font-size: 24px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #audio-control:hover {
+            background-color: black; 
+        }
+
+        footer {
+            background-color: #3333339a;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            font-size: 0.9em;
+        }
+
+        footer a {
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        p {
+            text-align: justify; 
+            font-size: 20px; 
+            line-height: 35px; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="site-name-container">
+            <img src="image/yoll.jpg" alt="Fatin's Image" width="50" height="50" border="2"> 
+            <div class="site-name"> 𝓕𝓪𝓽𝓲𝓷'𝓼 𝓼𝓲𝓽𝓮𝓼 ♥</div>
+        </div>
+
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="about_me.html">ABOUT ME</a>
+            <a href="education.html">EDUCATION</a>
+            <a href="family.html">FAMILY</a>
+            <a href="hobby.html">HOBBY</a>
+            <a href="album.html">ALBUM</a>
+        </nav>
+    </header>
+
+    <audio id="bg-audio" loop preload="auto">
+        <source src="music/song6.mp3" type="audio/mp3">
+    </audio>
+
+    <button id="audio-control">
+        &#9658; 
+    </button>
+
+    <div class="content">
+        <h1 style="font-family:verdana;">・₊✧ NUR FATIN INSYIRAH  ♡₊˚ </h1><br>
+        <div class="container">
+            <p>
+                Hello everyone! My name is Nur Fatin Insyirah Binti Mohd Faizal, and I’m thrilled to welcome you to my little corner of the internet. I’m 20 years old, born on the vibrant day of May 7, 2004. Currently, I’m pursuing my final semester in the Diploma of Information Management at UiTM Segamat, where every day brings new challenges and growth. I hail from the bustling town of Pasir Gudang, Johor, and I couldn’t be more excited to share a glimpse of my life, passions, and experiences through this blog. So, grab a cup of coffee (or tea!), and let’s dive into this journey together! 🌟
+            </p>
+            <div>
+                <img src="image/homepage_image.jpg" alt="Portfolio Image" class="image">
+            </div>
+        </div>
+
+        <div class="container2">
+            <div class="button-container">
+                <a href="about_me.html" class="button">ABOUT ME</a>
+                <a href="education.html" class="button">EDUCATION</a>
+                <a href="family.html" class="button">FAMILY</a>
+                <a href="hobby.html" class="button">HOBBY</a>
+                <a href="album.html" class="button">ALBUM</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var audio = document.getElementById('bg-audio');
+        var audioControl = document.getElementById('audio-control');
+
+        var isPlaying = false; 
+        audioControl.innerHTML = "&#9658;"; 
+
+        audioControl.addEventListener('click', function() {
+            if (!isPlaying) {
+                audio.play();
+                audioControl.innerHTML = "&#10074;&#10074;"; 
+                isPlaying = true;
+            } else {
+                audio.pause();
+                audioControl.innerHTML = "&#9658;"; 
+                isPlaying = false;
+            }
+        });
+    </script>
+
+    <footer>
+        © 2024 𝓕𝓪𝓽𝓲𝓷'𝓼 𝓼𝓲𝓽𝓮𝓼♥. All rights <sub>reserved.</sub> 
+        Designed with ❤️ by <sup>𝓕𝓪𝓽𝓲𝓷</sup>🦢.
+    </footer>
+
+</body>
+</html>
