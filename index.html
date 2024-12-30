@@ -167,6 +167,26 @@
             font-size: 20px; 
             line-height: 35px; 
         }
+
+        button {
+            background-color: #af844c;
+            border-color: grey; 
+            color: white;
+            padding: 15px 32px; 
+            text-align: center; 
+            text-decoration: none; 
+            display: inline-block; 
+            font-size: 16px; 
+            margin: 10px 0; 
+            cursor: pointer; 
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.2s; 
+        }
+
+        button:hover {
+            background-color: #dbad71; 
+            transform: scale(1.05); 
+        }
     </style>
 </head>
 <body>
@@ -234,6 +254,30 @@
                 isPlaying = false;
             }
         });
+    </script>
+
+    <button type="button"
+    onclick="displayMalaysiaDateTime()">
+    Click me.</button>
+
+    <p id="demo"></p>
+
+    <script>
+        function displayMalaysiaDateTime() {
+            const malaysiaTime = new Date().toLocaleString('en-MY', {
+                timeZone: 'Asia/Kuala_Lumpur',
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+                hour12: true
+            });
+
+            document.getElementById('demo').innerHTML = malaysiaTime;
+        }
     </script>
 
     <footer>
