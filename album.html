@@ -203,23 +203,45 @@
                     Your browser does not support the video tag.
                 </video>
                 <video width="250" height="400" controls>
-                    <source src="video3.mp4" type="video/mp4">
-                    <source src="video3.ogg" type="video/ogg">
-                    Your browser does not support the video tag.
-                </video>
-                <video width="250" height="400" autoplay muted>
-                    <source src="video5.mp4" type="video/mp4">
-                    <source src="video5.ogg" type="video/ogg">
-                    Your browser does not support the video tag.
-                </video>
-                <video width="250" height="400" controls>
                     <source src="video4.mp4" type="video/mp4">
                     <source src="video4.ogg" type="video/ogg">
                     Your browser does not support the video tag.
                 </video>
-                <br><br>
+                 <video id="video1" width="420">
+                  <source src="video3.mp4" type="video/mp4">
+                  <source src="video3.ogg" type="video/ogg">
+                  Your browser does not support HTML video.
+                </video><br><br>
+                <button onclick="playPause()">Play/Pause</button> 
+                <button onclick="makeBig()">Big</button>
+                <button onclick="makeSmall()">Small</button>
+                <button onclick="makeNormal()">Normal</button>
             </div><br>
     </div>
+
+    <script> 
+        var myVideo = document.getElementById("video1"); 
+        
+        function playPause() { 
+          if (myVideo.paused) 
+            myVideo.play(); 
+          else 
+            myVideo.pause(); 
+        } 
+        
+        function makeBig() { 
+            myVideo.width = 560; 
+        } 
+        
+        function makeSmall() { 
+            myVideo.width = 320; 
+        } 
+        
+        function makeNormal() { 
+            myVideo.width = 420; 
+        } 
+        </script>
+ 
 
     <script>
         var audio = document.getElementById('bg-audio');
